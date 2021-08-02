@@ -1,0 +1,32 @@
+{
+  "name": "typescript-design-patterns",
+  "version": "1.0.0",
+  "description": "implementations of the design patterns presented in the book: \"Design Patterns: Elements of Reusable Object-Oriented Software\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroHenrique-git/typescript-design-patterns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroHenrique-git/typescript-design-patterns/issues"
+  },
+  "homepage": "https://github.com/PedroHenrique-git/typescript-design-patterns#readme",
+  "dependencies": {
+    "ts-loader": "^9.2.4",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4"
+  }
+}
