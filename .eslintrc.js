@@ -21,5 +21,10 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
+    'max-classes-per-file': 'off',
+    'class-methods-use-this': 'off',
+    'no-unused-vars': 'off',
+    'no-console': 'off',
+    'no-param-reassign': 'off',
   },
 };

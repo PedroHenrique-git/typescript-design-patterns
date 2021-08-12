@@ -32,7 +32,10 @@ export class ProductComposite extends ProductComponent {
     }
 
     getPrice(): number {
-      return this.children.reduce((sum, leaf) => sum += leaf.getPrice(), 0);
+      return this.children.reduce((sum, leaf) => {
+        sum += leaf.getPrice();
+        return sum;
+      }, 0);
     }
 }
 
