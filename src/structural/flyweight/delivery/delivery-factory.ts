@@ -1,4 +1,5 @@
 import { DeliveryFlyweight } from './delivery-flyweight';
+import { DeliveryLocation } from './delivery-location';
 import { DeliveryLocationData, DeliveryLocationDictionary } from './delivery-types';
 
 export class DeliveryFactory {
@@ -9,6 +10,13 @@ export class DeliveryFactory {
     }
 
     makeLocation(intrisicState: DeliveryLocationData): DeliveryFlyweight {
-      const id = this.createId(intrisicState);
+      const key = this.createId(intrisicState);
+      if (key in this.locations) return this.locations[key];
+      this.locations[key] = new DeliveryLocation(intrisicState);
+      return this.locations[key];
+    }
+
+    getLocations(): DeliveryLocationDictionary {
+      return this.locations;
     }
 }
